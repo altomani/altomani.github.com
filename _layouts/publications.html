@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include head.html %}
+  <style type="text/css">
+    .authors, .pub-title, .locator {
+      display: block;
+    }
+    .pub-title {
+      font-weight: bold;
+    }
+    .locator {
+      font-style: italic;
+    }
+    section {
+      padding-top: 40px;
+    }
+
+    .sidenav {
+      padding-top: 40px;
+    }
+    .sidenav.affix {
+      // position: fixed;
+      top: 20px;
+      width: 220px;
+    }
+    .page-header {
+      margin-bottom: 0;
+    }
+    h2 {
+      margin-top: 0;
+    }
+  </style>
+  <body data-spy="scroll" data-target="#sidebar">
+
+    {% include navbar.html %}
+
+    <div class="container">
+
+      <div class="page-header">
+        <h1>Publications</h1>
+      </div>
+      <div class="row">
+        <div id="sidebar" class="span3" >
+          <ul  data-spy="affix" data-offset-top="110" class="nav nav-tabs nav-stacked affix-top sidenav">
+            <li><a href="#articles">Journal Articles</a></li>
+            <li><a href="#inpress">Articles in press</a></li>
+            <li><a href="#eprints">Eprints</a></li>
+          </ul>
+        </div>
+        <div class="span9"><section id="articles"><h2>Journal Articles</h2>
+            {% for bibitem in page.publ_list %}{% if bibitem.abbrev_source_title %}
+              {% include bibitem.html %}
+            {% endif %}{% endfor %}</section>
+          <section id="inpress"><h2>Articles in press</h2>
+            {% for bibitem in page.publ_list %}{% if bibitem.toappear %}
+                {% include bibitem.html %}
+            {% endif %}{% endfor %}</section>
+          
+          <section id="eprints">
+            <h2 id="eprints">Eprints</h2>
+            {% for bibitem in page.publ_list %}{% unless bibitem.journal or bibitem.toappear %}
+                {% include bibitem.html %}
+            {% endunless %}{% endfor %}</div>
+          </section>
+      </div>
+    </div>
+
+    {% include js.html %}
+    <script>
+      $(".accordion-heading .accordion-toggle").click( function() { 
+        $(this).parent().next(".accordion-body").collapse("toggle");
+        return(false);
+      } );
+      $(".accordion-body").on("hide show", function() { 
+        $(this).prev(".accordion-heading").find(".icon-caret-down, .icon-caret-right").toggleClass("icon-caret-down icon-caret-right"); 
+      } );
+      // $(".abstract_text").on('show', function() { 
+      //   $(this).prev(".abstract_title").text("Hide abstract"); 
+      // } );
+    
+          // $("h2").each( 
+          //   function() { 
+          //     $(this).nextUntil("h2").wrapAll('<div class="content level2 span9"></div>');
+          //     $(this).wrap('<div class="header level2 span3"></div>');
+          //     $(this).parent().add($(this).parent().next()).wrapAll('<div class="section level2 row"></div>')
+          //   }); 
+    </script>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        processEscapes: true,
+        "HTML-CSS": { scale: 90} 
+      }
+    });
+    </script>
+    <script type="text/javascript"
+      src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+  </body>
+</html>
