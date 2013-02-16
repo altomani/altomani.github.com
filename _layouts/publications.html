@@ -59,7 +59,7 @@
           
           <section id="eprints">
             <h2 id="eprints">Eprints</h2>
-            {% for bibitem in page.publ_list %}{% unless bibitem.journal or bibitem.toappear %}
+            {% for bibitem in page.publ_list %}{% unless (bibitem.abbrev_source_title or bibitem.toappear) %}
                 {% include bibitem.html %}
             {% endunless %}{% endfor %}</div>
           </section>
