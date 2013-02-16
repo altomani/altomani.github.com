@@ -1,0 +1,63 @@
+
+	<div class="accordion">
+		<div class="citation_data accordion-group">
+			<div class="accordion-heading">
+				<span class="accordion-inner pub-title">{{ bibitem.title }}</span>
+			</div>
+			<div class="accordion-body">
+				<div class="accordion-inner">
+					<span class="authors">
+						{% for person in bibitem.author %}
+						<span class="author">{{ person.given }}	{{ person.family }}</span>{% unless forloop.last %}, {% endunless %}
+						{% endfor %}
+					</span>
+					<span class="locator">
+						{% if bibitem.abbrev_source_title %}
+						  <span class="journal">{{ bibitem.abbrev_source_title }}</span>
+						  <span class="issue">{{ bibitem.issue }}</span>
+						{% elsif bibitem.toappear %}
+						  <span class="journal">to appear in {{ bibitem.toappear }}, preprint</span>
+						{% else %}
+						  <span class="journal">preprint</span>
+						{% endif %}
+						(<span class="year">{{ bibitem.issued.date-parts[0][0] }}</span>),
+						<span class="pages">{{ bibitem.page }}</span>
+					</span>
+			</div>
+			</div>
+		</div>
+		<div class="abstract accordion-group">
+			<div class="accordion-heading">
+				<a class="abstract_title accordion-toggle" href="#"><i class="icon-caret-right"></i> Abstract</a>
+			</div>		
+			<div class="accordion-body collapse">
+				<div class="abstract_text accordion-inner">
+					{{ bibitem.abstract }}
+				</div>
+			</div>
+		</div>
+		<div class="web_links accordion-group">
+			<div class="accordion-heading">
+				<a class="fulltext-links accordion-toggle" href="#"><i class="icon-caret-right"></i> {% if bibitem.mrnumber or bibitem.zblnumber %}Reviews and {% endif %}Full Text</a>
+			</div>		
+			<div class="accordion-body collapse">
+				<div class="accordion-inner">
+					{% if bibitem.mrnumber or bibitem.zblnumber %}
+						<p>{% if bibitem.mrnumber %}MathSciNet review: <a href="http://www.ams.org/mathscinet-getitem?mr={{bibitem.mrnumber}}">MR {{bibitem.mrnumber}}</a>
+						{% endif %}
+						{% if bibitem.mrnumber and bibitem.zblnumber %}<br>{% endif %}
+						{% if bibitem.zblnumber %}
+						  ZBMATH review: <a href="http://www.zentralblatt-math.org/zbmath/search/?q=an%3A{{bibitem.zblnumber}}">Zbl {{bibitem.zblnumber}}</a>
+						{% endif %}
+					</p>
+					{% endif %}
+					{% if bibitem.DOI %}
+					  Full text via CrossRef: <a href="http://dx.doi.org/{{bibitem.DOI}}">doi:{{bibitem.DOI}}</a><br>
+					{% endif %}
+					<!-- {% if bibitem.eprint %} -->
+					  Full text via arXiv: <a href="http://arxiv.org/abs/{{bibitem.eprint}}">arXiv:{{bibitem.eprint}}</a>
+					<!-- {% endif %} -->
+				</div>
+			</div>
+		</div>
+	</div>

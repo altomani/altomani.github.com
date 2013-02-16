@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include head.html %}
+
+  <body>
+
+    {% include navbar.html %}
+
+    <div class="container">
+
+      <div class="page-header">
+        <h1>Home page <small>Andrea Altomani</small></h1>
+        {% include address.html %}
+      </div>
+
+      {{ content }}
+
+    </div>
+
+    {% include js.html %}
+
+     </body>
+</html>

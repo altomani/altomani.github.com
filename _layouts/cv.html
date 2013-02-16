@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include head.html %}
+
+  <body>
+
+    {% include navbar.html %}
+
+    <div class="container">
+
+      <div class="page-header">
+        <h1>Andrea Altomani <small>Mathematician</small></h1>
+        {% include address.html %}
+      </div>
+
+      {{ content }}
+
+    </div>
+
+    {% include js.html %}
+
+    <script>
+          $("h2").each( 
+            function() { 
+              $(this).nextUntil("h2").wrapAll('<div class="content level2 span9"></div>');
+              $(this).wrap('<div class="header level2 span3"></div>');
+              $(this).parent().add($(this).parent().next()).wrapAll('<div class="section level2 row"></div>');
+              $(this).css('text-align', 'right')
+            }); 
+    </script>
+  </body>
+</html>
