@@ -1,6 +1,6 @@
 ---
 layout: test
-test_list: [{"label":"value1"},{"label":"value2"}]
+item: {"label":"value"}
 ---
 
 This text should not appear

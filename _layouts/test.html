@@ -2,10 +2,6 @@
     <html lang="en">
     <body>
       <h1>Hello world!</h1>
-      {% for item in page.test_list %}
-        Iteration: {{ forloop.index }}; 
-        the field <em>label</em> has value {{ item.label }}.
-        <br>
-      {% endfor %}
+        The field <em>label</em> has value <em>{{ page.item.label }}</em>.
     </body>
     </html>
