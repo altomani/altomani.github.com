@@ -1,7 +1,7 @@
 ---
 layout: test
 item: 
-  label: value
+  "label": value
 ---
 
 This text should not appear
