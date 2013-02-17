@@ -1,12 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-
-   <body>
-
-    <h1>Hello world!</h1>
-        
-    {% for item in page.test_list %}
-      <p>Iteration: {{ forloop.index }}; the field <em>label1</em> has value {{ item.label1 }}.</p>
-    {% endfor %}
-  </body>
-</html>
+    <!DOCTYPE html>
+    <html lang="en">
+    <body>
+      <h1>Hello world!</h1>
+      {% for item in page.test_list %}
+        Iteration: {{ forloop.index }}; 
+        the field <em>label</em> has value {{ item.label }}.
+        <br>
+      {% endfor %}
+    </body>
+    </html>
