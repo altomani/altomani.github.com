@@ -143,8 +143,7 @@ publ_list:
     given: C.
   title: A characterization of CR quadrics with a symmetry property
   container-title: Journal of Geometric Analysis
-  volume: '22'
-  issue: '3'
+  issue: '22'
   page: 892-909
   scopus_url: http://www.scopus.com/inward/record.url?eid=2-s2.0-84863826419&partnerID=40&md5=91f6d60d8196f519ac8622638badf01e
   abstract: We study CR quadrics satisfying a symmetry property $(\tilde S)$ which
@@ -182,7 +181,7 @@ publ_list:
     given: E.
   title: Holomorphic extension from weakly pseudoconcave CR manifolds
   container-title: Rendiconti del Seminario Matematico dell 'Universita' di Padova
-  volume: '123'
+  issue: '123'
   page: 69-90
   scopus_url: http://www.scopus.com/inward/record.url?eid=2-s2.0-84856140498&partnerID=40&md5=6ba76a51f4eafb1456e828be0e8e50e2
   abstract: Let $M$ be a smooth locally embeddable CR manifold, having some CR dimension
@@ -216,8 +215,7 @@ publ_list:
     given: M.
   title: Orbits of real forms in complex flag manifolds
   container-title: Annali della Scuola Normale - Classe di Scienze
-  volume: '9'
-  issue: '1'
+  issue: IX
   page: 69-109
   scopus_url: http://www.scopus.com/inward/record.url?eid=2-s2.0-83455214186&partnerID=40&md5=a100da7886204358a373e736119295f2
   abstract: We investigate the CR geometry of the orbits $M$ of a real form $G_0$
@@ -248,8 +246,7 @@ publ_list:
     given: E.
   title: Complex vector fields and hypoelliptic partial differential operators
   container-title: Annales de l'Institut Fourier
-  volume: '60'
-  issue: '3'
+  issue: '60'
   page: 987-1034
   scopus_url: http://www.scopus.com/inward/record.url?eid=2-s2.0-77958504834&partnerID=40&md5=f8dadf2101ab9fcbe2c9c613b6ba0b88
   abstract: We prove a subelliptic estimate Tor systems of complex vector fields under
@@ -291,8 +288,7 @@ publ_list:
   URL: http://arxiv.org/abs/0910.4531
   container-title: Bollettino dell'Unione Matematica Italiana (9)
   abbrev_source_title: Boll. Unione Mat. Ital.
-  volume: '3'
-  issue: '2'
+  issue: '3'
   mrnumber: '2666357'
   zblnumber: '1214.32009'
   id: Altomani2009
@@ -310,8 +306,7 @@ publ_list:
     given: M.
   title: On the topology of minimal orbits in complex flag manifolds
   container-title: Tohoku Mathematical Journal
-  volume: '60'
-  issue: '3'
+  issue: '60'
   page: 403-422
   scopus_url: http://www.scopus.com/inward/record.url?eid=2-s2.0-55949133757&partnerID=40&md5=ad2c354c9a8f956479af246bc9b2e977
   abstract: We compute the Euler-Poincaré characteristic of the homogeneous compact
@@ -387,8 +382,7 @@ publ_list:
     given: C.
   title: On homogeneous CR manifolds and their CR algebras
   container-title: International Journal of Geometric Methods in Modern Physics
-  volume: '3'
-  issue: 5-6
+  issue: '3'
   page: 1199-1214
   scopus_url: http://www.scopus.com/inward/record.url?eid=2-s2.0-33750138729&partnerID=40&md5=1711fbfeb2dc0b06af9b37de54329cd1
   abstract: In this paper we show some results on homogeneous CR manifolds, proved
@@ -419,8 +413,7 @@ publ_list:
     given: M.
   title: The CR structure of minimal orbits in complex flag manifolds
   container-title: Journal of Lie Theory
-  volume: '16'
-  issue: '3'
+  issue: '16'
   page: 483-530
   scopus_url: http://www.scopus.com/inward/record.url?eid=2-s2.0-33746217549&partnerID=40&md5=18319ee3e6f5678d151e300be30f89e6
   abstract: Let $\^G$ be a complex semisimple Lie group, $Q$ a parabolic subgroup
@@ -460,8 +453,7 @@ publ_list:
   primaryclass: math
   title: A note on the CR cohomology of Levi-Flat minimal orbits in complex flag manifolds
   URL: http://arxiv.org/abs/math/0601617
-  volume: '3'
-  issue: 1-2
+  issue: '3'
   container-title: Rendiconti dell'Istituto Matematico dell'Università di Trieste
   abbrev_source_title: Rend. Ist. Mat. Univ. Trieste
   mrnumber: '2227062'
@@ -479,7 +471,6 @@ publ_list:
     given: M.
   title: Abelian extensions of semisimple graded CR algebras
   container-title: Advances in Geometry
-  volume: '4'
   issue: '4'
   page: 433-457
   scopus_url: http://www.scopus.com/inward/record.url?eid=2-s2.0-33746235761&partnerID=40&md5=8255a9895e7aa576d8eff8b162433d73
