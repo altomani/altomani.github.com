@@ -46,12 +46,12 @@ Honourable mention at the International Mathematics Olympiads
 ### Collaboration
 
 Excellent at team-work and project management   
-Main organizers of four international conferences
+Main organizer of four international conferences
 
 ### Communication
 
 Excellent at communicating with any audience   
-19 talks at seminars or conferences   
-8 courses as lecturer and 16 as teaching assistant at various universities 
+19 talks at seminars and conferences   
+8 courses as a lecturer and 16 as a teaching assistant at various universities 
 
 References available on request. Full academic CV at [andrea.altomani.eu/CV](http://andrea.altomani.eu/CV/).
