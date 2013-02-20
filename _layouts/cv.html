@@ -26,7 +26,7 @@
     <script>
           $("h2").each( 
             function() { 
-              $(this).nextUntil("h2").wrapAll('<div class="content level2 span9"></div>');
+              $(this).nextUntil("h2,hr").wrapAll('<div class="content level2 span9"></div>');
               $(this).wrap('<div class="header level2 span3"></div>');
               $(this).parent().add($(this).parent().next()).wrapAll('<div class="section level2 row"></div>');
               $(this).css('text-align', 'right')

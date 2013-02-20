@@ -1,7 +1,7 @@
 ---
 layout: publications
-title: Publications
-publ: active
+title: 'Publications'
+publ: 'active'
 publ_list:
 - abstract: Let $V$ be a complex orthogonal vector space and $S$ an irreducible $C\!\ell(V)$-module.
     A supertranslation algebra is a Z-graded Lie superalgebra $\mathfrak{m}=\mathfrak{m}_{-2}+\mathfrak{m}_{-1}=V+(S+...+S)$
